@@ -1,4 +1,4 @@
-# flutter_mnmlmandi_e_commerce_app
+# Flutter MNMLMANDI Ecommerce App
 
 A new Flutter project.
 
