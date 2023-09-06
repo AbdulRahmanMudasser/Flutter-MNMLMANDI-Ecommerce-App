@@ -5,7 +5,7 @@ import 'package:flutter_mnmlmandi_e_commerce_app/pages/home_page.dart';
 
 import '../components/widgets/on boarding/image_list_view.dart';
 import '../components/widgets/on boarding/information section/information_section.dart';
-import '../components/widgets/reusable_button.dart';
+import '../components/widgets/custom_button.dart';
 import '../config/app_size.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -59,7 +59,7 @@ class OnBoardingPage extends StatelessWidget {
             left: 20,
             right: 20,
             bottom: 30,
-            child: ReusableButton(
+            child: CustomButton(
               text: "Sign Up with Email",
               onPressed: () {
                 Navigator.of(context).push(

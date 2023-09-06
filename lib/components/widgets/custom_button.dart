@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../config/app_colors.dart';
 import '../../config/app_size.dart';
 
-class ReusableButton extends StatelessWidget {
-  const ReusableButton({
+class CustomButton extends StatelessWidget {
+  const CustomButton({
     super.key,
     required this.text,
     this.height = 65,
