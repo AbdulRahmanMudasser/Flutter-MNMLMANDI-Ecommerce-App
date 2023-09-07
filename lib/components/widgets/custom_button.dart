@@ -7,18 +7,16 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.text,
-    this.height = 65,
     required this.onPressed,
   });
 
   final String text;
-  final double height;
   final GestureTapCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: getProportionateScreenHeight(height),
+      height: getProportionateScreenHeight(65),
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(

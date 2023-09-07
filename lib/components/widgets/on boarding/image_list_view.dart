@@ -43,7 +43,7 @@ class _ImageListViewState extends State<ImageListView> {
     scheduleMicrotask(() {
       _scrollController.animateTo(
         currentScrollPosition == scrollEndPosition ? 0 : scrollEndPosition,
-        duration: Duration(seconds: 10),
+        duration: const Duration(seconds: 10),
         curve: Curves.linear,
       );
     });

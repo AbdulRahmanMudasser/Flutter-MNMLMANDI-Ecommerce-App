@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mnmlmandi_e_commerce_app/pages/category_page.dart';
-import 'package:flutter_mnmlmandi_e_commerce_app/pages/product_display_page.dart';
+import 'package:flutter_mnmlmandi_e_commerce_app/pages/product_page.dart';
 
 import '../components/widgets/custom_bottom_navigation_bar.dart';
 
@@ -30,8 +30,8 @@ class _HomePageState extends State<HomePage> {
                 });
               },
               children: const [
-                ProductsPage(),
-                CategoriesPage(),
+                ProductPage(),
+                CategoryPage(),
               ],
             ),
 
