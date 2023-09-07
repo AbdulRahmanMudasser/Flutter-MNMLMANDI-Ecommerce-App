@@ -4,6 +4,8 @@ import 'package:flutter_mnmlmandi_e_commerce_app/components/widgets/home/product
 import 'package:flutter_mnmlmandi_e_commerce_app/components/widgets/home/search_box.dart';
 import 'package:flutter_mnmlmandi_e_commerce_app/config/app_colors.dart';
 import 'package:flutter_mnmlmandi_e_commerce_app/config/app_size.dart';
+import 'package:flutter_mnmlmandi_e_commerce_app/data/clothing_products_data.dart';
+import 'package:flutter_mnmlmandi_e_commerce_app/data/trending_products_data.dart';
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key});
@@ -125,9 +127,9 @@ class _ProductPageState extends State<ProductPage> with TickerProviderStateMixin
               child: TabBarView(
                 physics: const NeverScrollableScrollPhysics(),
                 controller: tabController,
-                children: const [
-                  ProductDisplayList(),
-                  ProductDisplayList(),
+                children:  [
+                  ProductDisplayList(product: trendingProducts),
+                  ProductDisplayList(product: clothingProducts),
                 ],
               ),
             )

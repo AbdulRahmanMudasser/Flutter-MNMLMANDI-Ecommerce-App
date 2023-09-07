@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mnmlmandi_e_commerce_app/config/app_size.dart';
-import 'package:flutter_mnmlmandi_e_commerce_app/data/products_data.dart';
+import 'package:flutter_mnmlmandi_e_commerce_app/data/trending_products_data.dart';
 
 class ImageListView extends StatefulWidget {
   const ImageListView({
@@ -61,7 +61,7 @@ class _ImageListViewState extends State<ImageListView> {
           itemCount: 5,
           itemBuilder: (context, index) {
             return CachedNetworkImage(
-              imageUrl: products[widget.startingIndex + index].productImageUrl,
+              imageUrl: trendingProducts[widget.startingIndex + index].productImageUrl,
               imageBuilder: (context, imageProvider) {
                 return Container(
                   margin: const EdgeInsets.only(right: 8, left: 8, top: 10),

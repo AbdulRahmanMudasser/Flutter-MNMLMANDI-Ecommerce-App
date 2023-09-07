@@ -57,9 +57,9 @@ class SingleItem extends StatelessWidget {
                       product.productName,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTextStyles.kNormalStyle.copyWith(
+                      style: const TextStyle(
                         fontSize: 17,
-                      ),
+                      )
                     ),
                   ),
 

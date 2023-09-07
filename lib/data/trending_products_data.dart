@@ -1,7 +1,7 @@
 import 'package:flutter_mnmlmandi_e_commerce_app/models/product_model.dart';
 
-// list of products
-final List<ProductModel> products = [
+// list of trending products
+final List<ProductModel> trendingProducts = [
   ProductModel(
     id: 1,
     productName: "MNML - Oversized T Shirt",
@@ -66,10 +66,10 @@ final List<ProductModel> products = [
     isLiked: false,
   ),
   ProductModel(
-    id: 7,
+    id: 8,
     productName: "Half T Shirt",
     productImageUrl:
-        "https://images.unsplash.com/photo-1517298257259-f72ccd2db392?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
+        "https://images.unsplash.com/photo-1552642986-ccb41e7059e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
     currentPrice: "204",
     oldPrice: "350",
     isLiked: true,
